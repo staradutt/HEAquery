@@ -2,7 +2,7 @@
 
 **LLM-Powered Research Assistant for High Entropy Alloys**  
 *Hackathon: LLM for Materials Science*
-
+![Logo](HEA_query.png)
 ---
 
 ## 🧠 Summary
