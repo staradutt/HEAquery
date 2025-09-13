@@ -38,7 +38,7 @@ This assistant helps materials scientists ask questions like:
 
 ### 📚 Resource 1: Literature Corpus
 
-- ~1800 open-access PDFs on HEAs
+- ~3000 open-access PDFs on HEAs
 - Extracted sections: `abstract`, `introduction`, `methods`, `conclusion`
 - Chunked with LangChain `RecursiveCharacterTextSplitter`
 - Embedded with `BAAI/bge-base-en`
