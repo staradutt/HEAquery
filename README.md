@@ -13,7 +13,7 @@ We combine:
 
 - 🔍 A semantic search engine over thousands of research paper chunks  
 - 📊 Cleaned and normalized tabular datasets containing alloy properties  
-- 🤖 A powerful LLM (Mistral-7B) to generate natural language answers  
+- 🤖 A powerful LLM (GPT-2) to generate natural language answers  
 - 🖥️ An interactive Gradio interface for easy exploration
 
 This assistant helps materials scientists ask questions like:
@@ -26,9 +26,9 @@ This assistant helps materials scientists ask questions like:
 
 ## 🚀 Features
 
-- 🔍 **Semantic paper search** using FAISS + BAAI embeddings  
+- 🔍 **Semantic paper search** using FAISS + MatSciBERT embeddings  
 - 📊 **Smart dataset filtering** using canonical and synonymous property names  
-- 🤖 **LLM-based reasoning** via Mistral-7B  
+- 🤖 **LLM-based reasoning** via GPT-2  
 - 🧾 **Unified prompt generation** from papers + structured data  
 - 🖥️ **Gradio app** with answer + tables + raw paper context
 
@@ -41,7 +41,7 @@ This assistant helps materials scientists ask questions like:
 - ~3000 open-access PDFs on HEAs
 - Extracted sections: `abstract`, `introduction`, `methods`, `conclusion`
 - Chunked with LangChain `RecursiveCharacterTextSplitter`
-- Embedded with `BAAI/bge-base-en`
+- Embedded with `m3rg-iitd/matscibert`
 - Indexed using `FAISS`
 
 ### 📊 Resource 2: Structured Datasets
@@ -58,8 +58,8 @@ This assistant helps materials scientists ask questions like:
 
 ## 🧠 Model Details
 
-- **LLM**: `Mistral-7B-Instruct v0.3`
-- **Embeddings**: `BAAI/bge-base-en`
+- **LLM**: `GPT-2`
+- **Embeddings**: `m3rg-iitd/matscibert`
 - **Frameworks**: LangChain, Transformers, FAISS, Gradio
 
 ---
@@ -71,7 +71,7 @@ This assistant helps materials scientists ask questions like:
    - Uses **FAISS** to retrieve relevant paper chunks.
    - Filters HEA datasets based on numeric or categorical queries.
    - Constructs a unified prompt combining both results.
-3. **Mistral LLM** generates a structured, domain-aware response.
+3. **GPT-2 LLM** generates a structured, domain-aware response.
 
 ### Outputs:
 - 📄 **LLM Answer**
