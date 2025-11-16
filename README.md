@@ -40,7 +40,8 @@ This assistant helps materials scientists ask questions like:
 
 - ~3000 open-access PDFs on HEAs
 - Extracted sections: `abstract`, `introduction`, `methods`, `conclusion`
-- Chunked with LangChain `RecursiveCharacterTextSplitter`
+- Summarised wirh `BART-CNN`
+- Chunked with overlapping windows
 - Embedded with `m3rg-iitd/matscibert`
 - Indexed using `FAISS`
 
